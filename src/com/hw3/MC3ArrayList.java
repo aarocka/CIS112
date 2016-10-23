@@ -4,6 +4,12 @@ package com.hw3;
  * Created by aaron on 10/23/2016.
  */
 public class MC3ArrayList implements MC3ListOperations {
+
+    
+    public MC3ArrayList(){
+
+    }
+
     @Override
     public void add(Object o) {
 

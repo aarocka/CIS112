@@ -3,7 +3,7 @@ package com.hw2;
 /**
  * Created by aaron on 10/23/2016.
  */
-public class MC3ArrayList {
+public class MC3ArrayList implements MC3ListOperations{
     // Much of this program is based on the StringLog found in Section 2.3
     Object[] data;
     int lastIndex = -1;
@@ -12,6 +12,7 @@ public class MC3ArrayList {
     public MC3ArrayList() {
         data = new Object[INITIAL_CAPACITY];
     }
+
     public MC3ArrayList(Object[] o){
         data = o;
         lastIndex= o.length-1;
@@ -19,6 +20,7 @@ public class MC3ArrayList {
     public MC3ArrayList(int initialCapacity){
         data = new Object[initialCapacity];
     }
+
     public void add(Object o){
 
         if (lastIndex+1<data.length){

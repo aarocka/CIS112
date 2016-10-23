@@ -4,22 +4,14 @@ package com.hw2;
  * Created by aaron on 10/23/2016.
  */
 public interface MC3ListOperations {
-
+    void add();
+    void clear();
+    void ensureCapacity();
+    int indexOf();
+    boolean isEmpty();
+    Object remove();
+    Object get();
+    Object set();
+    int size();
+    String toString();
 }
-
-
-/////////////////////////////
-//SAMPLE INTERFACE PLS REMOVE
-/////////////////////////////
-
-/*
-public interface Bicycle {
-    void changeCadence(int newValue);
-
-    void changeGear(int newValue);
-
-    void speedUp(int increment);
-
-    void applyBrakes(int decrement);
-}
-*/

@@ -5,9 +5,15 @@ package com.hw3;
  */
 public class MC3ArrayList implements MC3ListOperations {
 
-    
+
     public MC3ArrayList(){
 
+    }
+
+    MC3ArrayList(Object[] o){
+
+
+        
     }
 
     @Override

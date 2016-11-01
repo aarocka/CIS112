@@ -2,7 +2,12 @@ package com.hw2;
 
 /**
  * Created by aaron on 10/23/2016.
+ *
  */
+
+
+
+
 public class MC3ArrayList implements MC3ListOperations{
     // Much of this program is based on the StringLog found in Section 2.3
     Object[] data;

@@ -1,5 +1,7 @@
 package com.hw2;
 
+import java.lang.reflect.Array;
+
 /**
  * Created by aaron on 10/23/2016.
  */
@@ -47,6 +49,10 @@ public class Main {
         }
         a.clear();
         System.out.println(a.isEmpty());
+
+        Object[] myArray= {1,3,5,6,7,25,"12"};
+        MC3ArrayList b = new MC3ArrayList(myArray);
+        System.out.println(b.toString());
     }
 
 }

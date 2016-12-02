@@ -51,13 +51,55 @@ public class LinkedStack<T> implements UnboundedStackInterface<T>
         else
             return false;
     }
+    
+    public int sizeIs(){
+        int nodeCount=0;
+        LLNode<T> currNode = top;
+        while (currNode != null){
+            nodeCount++;
+            currNode = currNode.getLink();
+        }
+        return nodeCount;
+    }
 
-    //TODO
+    public T inspector(int location) {
+        if (location <= 0 || location > sizeIs()){
+            return null;
+        }
+        location--; // this is needed because for some reason the problem in the book wants this method to count from 1
+        LLNode<T> currNode = top;
+        for (int i=0; i<location; i++){
+            currNode = currNode.getLink();
+        }
+
+        return currNode.getInfo();
+    }
+
+    
+    public void popSome(int count) {
+        //this code breaks if i want to remove negative elements
+        if (count <= sizeIs()) {
+            for (int i = 0; i < count; i++) {
+                pop();
+            }
+        }
+        else
+            throw new StackUnderflowException("More elements were removed than exist. " +
+                    "I'm going to pretend you never tried to do this in the first place");
+    }
 
     @Override
     public String toString() {
-        return "LinkedStack{" +
-                "top=" + top +
-                '}';
+
+        String stringify="LinkedStack{";
+        LLNode<T> currNode = top;
+        while (currNode != null){
+            stringify = stringify + currNode.getInfo();
+            currNode = currNode.getLink();
+            if (currNode!=null)
+                stringify=stringify+", ";
+        }
+        stringify = stringify + "}";
+        return stringify;
     }
 }

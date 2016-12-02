@@ -13,10 +13,10 @@ public class Main {
         a.add("2nd");
         a.add("3rd");
         System.out.println(a.toString());
-        System.out.println("array size:"+a.size());
+        System.out.println("array sizeIs:"+a.size());
         a.add("4nd");
         System.out.println(a.toString());
-        System.out.println("array size:"+a.size());
+        System.out.println("array sizeIs:"+a.size());
         a.ensureCapacity(10);
         a.add("5th");
         a.add("6th");
@@ -25,14 +25,14 @@ public class Main {
         a.add("9th");
         a.add("10th");
         System.out.println(a.toString());
-        System.out.println("array size:"+a.size());
+        System.out.println("array sizeIs:"+a.size());
         System.out.println(a.get(9));
         a.set(1,"Insertion");
         System.out.println(a.toString());
-        System.out.println("array size:"+a.size());
+        System.out.println("array sizeIs:"+a.size());
         a.remove(1);
         System.out.println(a.toString());
-        System.out.println("array size:"+a.size());
+        System.out.println("array sizeIs:"+a.size());
 
         if(a.indexOf("nest")!=-1){
             System.out.println(a.indexOf("nest"));

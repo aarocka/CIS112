@@ -18,4 +18,9 @@ public interface StackInterface<T>
     boolean isEmpty();
     // Returns true if this stack is empty, otherwise returns false.
 
+
+
+    // Returns an element from the stack. This method counts from 1 where 1 is the top of the stack.
+
+
 }
